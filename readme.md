@@ -1,9 +1,26 @@
-<h1>Ejercicio FIP - Veteria</h1>
+<h1>Ejercicio FIP - Veterinaria</h1>
 
 <h3>Segundo cuatrimestre</h3>
 
 <hr>
 
+
+## Instalación
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/MicaBahurlet/VeterinariaFip.git
+2. Instalar las dependencias:
+   ```bash
+   npm install
+<!-- ## Correr en consola
+
+1. Compilar el ts - lo configuramos en /dist
+   ```bash
+   npx tsc
+2. Ejecutar el programa desde la consola: 
+   ```bash
+   node dist/main.js -->
+<hr>
 <h3>Consigna de trabajo: </h3>
  
 Nuestro cliente es una red de veterinarias y 
