@@ -1,0 +1,4 @@
+101,Veterinaria Central,Av. Siempre Viva 123
+102,Veterinaria del Sur,Calle Falsa 456
+103, Veterinaria Ornero, Calle Avellaneda 3456
+104, Veterinaria Coliandro, Av. Austral 2345
