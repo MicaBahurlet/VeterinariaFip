@@ -1,2 +1,4 @@
-201,Juan Pérez,Firulais
-202,María Gómez,Max
+7775,Pepe Tester,2284-786543,7,true
+6789,Maria Gomez,0987654321,true,6
+3456,Carlos Ruiz,1122334455,false,2
+9236,Tester client to CLI,2284-567834,5,true

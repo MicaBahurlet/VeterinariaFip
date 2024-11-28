@@ -1,4 +1,4 @@
-<h1>Patitas - Veterinaria</h1>
+<h1>Patitas System</h1>
 
 <h3>Trabajo Integrador FIP -Segundo cuatrimestre</h3>
 
@@ -12,6 +12,9 @@
 2. Instalar las dependencias:
    ```bash
    npm install
+3. Actualizar repo local en base a remoto:
+   ```bash
+   git pull origin main
 ## Correr en consola
 
 1. Compilar el ts - lo configuramos en /dist
@@ -20,6 +23,7 @@
 2. Ejecutar el programa desde la consola: 
    ```bash
    node dist/main.js
+
 <hr>
 <h3>Consigna de trabajo: </h3>
  
