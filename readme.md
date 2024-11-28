@@ -1,11 +1,19 @@
-<h1>Patitas System</h1>
-
+<h1>Patitas System 🐾</h1>
 <h3>Trabajo Integrador FIP -Segundo cuatrimestre</h3>
+<p>Sistema de gestión para una red de veterinarias. En este sistema se podrán visualizar clientes, pacientes, proveedores e información de cada sucursal asociada a la red. <br> Además, en caso de requerirlo, se podrá visualizar los datos, modificarlos y eliminarlos.</p>
 
+### Correr en consola
+
+1. Compilar el ts - lo configuramos en /dist
+   ```bash
+   npx tsc
+2. Ejecutar el programa desde la consola: 
+   ```bash
+   node dist/main.js
 <hr>
 
 
-## Instalación
+## Instalación en local
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/MicaBahurlet/VeterinariaFip.git
@@ -15,15 +23,6 @@
 3. Actualizar repo local en base a remoto:
    ```bash
    git pull origin main
-## Correr en consola
-
-1. Compilar el ts - lo configuramos en /dist
-   ```bash
-   npx tsc
-2. Ejecutar el programa desde la consola: 
-   ```bash
-   node dist/main.js
-
 <hr>
 <h3>Consigna de trabajo: </h3>
  
@@ -59,3 +58,5 @@ alta, baja y modificación de los mismos.
 IMPORTANTE:  los  id  deben  ser  únicos,  por  lo  tanto  al 
 generarse,  antes  de  guardarlos  se  debe  validar  que  no 
 exista. Si ya existe se debe volver a generar.
+
+Fecha de entrega: 4 de diciembre

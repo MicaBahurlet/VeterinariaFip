@@ -3,10 +3,10 @@ import { listar, agregar, eliminar, modificar } from './crud';
 
 function mostrarMenuPrincipal(): void {
     console.log("\n=== 👋 Patitas System 🐾 ===");
-    console.log("1. Gestionar Sucursales 🏨");
-    console.log("2. Gestionar Clientes 👨‍👧‍👧");
-    console.log("3. Gestionar Pacientes 🐈");
-    console.log("4. Gestionar Proveedores 👩");
+    console.log("1. 🏨 Gestionar Sucursales");
+    console.log("2. 👨‍👧‍👧 Gestionar Clientes");
+    console.log("3. 🐈 Gestionar Pacientes ");
+    console.log("4. 👩 Gestionar Proveedores ");
     console.log("5. Salir");
 }
 
@@ -212,7 +212,7 @@ function main(): void {
                 break;
             case 5:
                 salir = true;
-                console.log("Saliendo de Patitas System 🐾...👋 Hasta pronto!");
+                console.log("🐾 Saliendo de Patitas System...👋 Hasta pronto!");
                 break;
             default:
                 console.log("Opción inválida. Seleccione un numero de la pantalla.");
