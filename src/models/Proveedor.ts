@@ -1,24 +1,8 @@
-// export class Proveedor {
-//     id: number;
-//     nombre: string;
-//     telefono: string;
-  
-//     constructor(nombre: string, telefono: string) {
-//       this.id = Proveedor.generarId();
-//       this.nombre = nombre;
-//       this.telefono = telefono;
-//     }
-  
-//     static generarId(): number {
-//       return Math.floor(Math.random() * 10000);
-//     }
-// }
-
 export class Proveedor {
-  id: number;
-  nombre: string;
-  telefono: string;
-  categoria: string;
+  private id: number;
+  private nombre: string;
+  private telefono: string;    //ver
+  private categoria: string;
 
   constructor(nombre: string, telefono: string, categoria: string) {
     this.id = this.generarId();

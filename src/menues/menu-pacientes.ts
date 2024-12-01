@@ -24,7 +24,7 @@ function gestionarPacientes(): void {
         const especie = readlineSync.question(
           "Ingrese la especie del paciente: "
         );
-        const idDuenio = readlineSync.questionInt("Ingrese el ID del dueño: ");
+        const idDuenio = readlineSync.questionInt("Ingrese el ID del dueño: "); 
         //validacion para ver si es exotica o no
         const nuevoRegistro = `${Math.floor(Math.random() * 10000)},${nombre},${
           especie.toLowerCase() === "perro" || especie.toLowerCase() === "gato"
@@ -38,7 +38,7 @@ function gestionarPacientes(): void {
         const indexModificar = readlineSync.questionInt(
           "Seleccione el índice a modificar: "
         );
-        const nuevoNombre = readlineSync.question("Ingrese el nuevo nombre: ");
+        const nuevoNombre = readlineSync.question("Ingrese el nuevo nombre: ");   //to do validation nuevoNombre
         const nuevaEspecie = readlineSync.question(
           "Ingrese la nueva especie: "
         );

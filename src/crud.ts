@@ -1,16 +1,20 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-//para listar, ruta relativa de la info 
+//para listar
 export function listar(fileName: string): void {
     try {
+        //ruta relativa de la info 
         const filePath = path.join(__dirname, `../src/data/${fileName}`);
+        //leer información del archivo
         // console.log(`Leyendo archivo desde: ${filePath}`);  
         const data = fs.readFileSync(filePath, 'utf-8');
+        //dividimos el archivo en lineas (split) y luego filtramos y eliminamos los espacios en blanco (filter)
+        // \n salto de línea 
         const lines = data.split('\n').filter(line => line.trim() !== '');
-        if (lines.length === 0) {
+        if (lines.length === 0) { //en caso de que no haya información
             console.log("No hay datos para mostrar.");
-        } else {
+        } else {    //en caso de que haya información, recorre línea por línea y las va mostrando
             console.log("\n=== Lista de datos ===");
             lines.forEach((line, index) => {
                 console.log(`${index + 1}. ${line}`);
@@ -42,6 +46,8 @@ export function eliminar(fileName: string, index: number): void {
             console.log("Índice inválido. Seleccione un numero de la pantalla");
             return;
         }
+        // "-1" porque los arrays arrancan desde la posición 0 y "1" por la cantidad de elementos que queremos borrar 
+        //splice(posición, cantidad);
         lines.splice(index - 1, 1);
         fs.writeFileSync(filePath, lines.join('\n') + '\n');
         console.log("Registro eliminado correctamente.");
