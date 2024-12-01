@@ -1,30 +1,8 @@
-// export class Paciente {
-//     id: number;
-//     nombre: string;
-//     especie: string;
-//     idDuenio: number;
-  
-//     constructor(nombre: string, especie: string, idDuenio: number) {
-//       this.id = Paciente.generarId();
-//       this.nombre = nombre;
-//       this.especie = Paciente.validarEspecie(especie);
-//       this.idDuenio = idDuenio;
-//     }
-  
-//     static validarEspecie(especie: string): string {
-//       return especie.toLowerCase() === 'perro' || especie.toLowerCase() === 'gato' ? especie : 'exotica';
-//     }
-  
-//     static generarId(): number {
-//       return Math.floor(Math.random() * 10000);
-//     }
-// }
-
 export class Paciente {
-  id: number;
-  nombre: string;
-  especie: string;
-  idDuenio: number;
+  private id: number;
+  private nombre: string;
+  private especie: string;
+  private idDuenio: number;
 
   constructor(nombre: string, especie: string, idDuenio: number) {
     this.id = this.generarId();
@@ -33,7 +11,7 @@ export class Paciente {
     this.idDuenio = idDuenio;
   }
 
-  private validarEspecie(especie: string): string {
+  private validarEspecie(especie: string): string {                                                           //if para validación. usar trim 
     return especie.toLowerCase() === 'perro' || especie.toLowerCase() === 'gato' ? especie : 'exotica';
   }
 

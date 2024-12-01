@@ -22,7 +22,8 @@ function gestionarVeterinarias(): void {
           "Ingrese el nombre de la veterinaria: "
         );
         const direccion = readlineSync.question("Ingrese la dirección: ");
-        const nuevoRegistro = `${Math.floor(
+        //const id = Math.floor(Math.random() * 10000)
+        const nuevoRegistro = `${Math.floor(            //pasarle id, nombre y dirección
           Math.random() * 10000
         )},${nombre},${direccion}`;
         agregar("veterinarias.txt", nuevoRegistro);
@@ -36,7 +37,7 @@ function gestionarVeterinarias(): void {
         const nuevaDireccion = readlineSync.question(
           "Ingrese la nueva dirección: "
         );
-        const registroModificado = `${Math.floor(
+        const  registroModificado= `${Math.floor(             //pasarle id, nombre y dirección
           Math.random() * 10000
         )},${nuevoNombre},${nuevaDireccion}`;
         modificar("veterinarias.txt", indexModificar, registroModificado);
