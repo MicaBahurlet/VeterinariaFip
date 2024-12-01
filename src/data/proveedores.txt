@@ -1,3 +1,6 @@
 401,Proveedora Animal,Medicamentos,2284567843
 402,Pet Supplies,Alimentos,2284767883
 403,Royal Wie, Juguetes,2284897632
+3719,Pepe Tester,3456278
+7768,Tester Category,223456
+1369,Tester add Category,223456, Medicamentos

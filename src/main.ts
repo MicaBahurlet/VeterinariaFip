@@ -4,7 +4,7 @@ import { listar, agregar, eliminar, modificar } from './crud';
 function mostrarMenuPrincipal(): void {
     console.log("\n=== 👋 Patitas System 🐾 ===");
     console.log("1. 🏨 Gestionar Sucursales");
-    console.log("2. 👨‍👧‍👧 Gestionar Clientes");
+    console.log("2. 🧑 Gestionar Clientes");
     console.log("3. 🐈 Gestionar Pacientes ");
     console.log("4. 👩 Gestionar Proveedores ");
     console.log("5. Salir");
@@ -120,6 +120,7 @@ function gestionarPacientes(): void {
               const nombre = readlineSync.question("Ingrese el nombre del paciente: ");
               const especie = readlineSync.question("Ingrese la especie del paciente: ");
               const idDuenio = readlineSync.questionInt("Ingrese el ID del dueño: ");
+              //validacion para ver si es exotica o no
               const nuevoRegistro = `${Math.floor(Math.random() * 10000)},${nombre},${especie.toLowerCase() === 'perro' || especie.toLowerCase() === 'gato' ? especie : 'exotica'},${idDuenio}`;
               agregar('pacientes.txt', nuevoRegistro);
               break;
@@ -164,8 +165,9 @@ function gestionarProveedores(): void {
               break;
           case 2:
               const nombre = readlineSync.question("Ingrese el nombre del proveedor: ");
+              const categoria = readlineSync.question("Ingrese categoria del proveedor: ");
               const telefono = readlineSync.question("Ingrese el teléfono del proveedor: ");
-              const nuevoRegistro = `${Math.floor(Math.random() * 10000)},${nombre},${telefono}`;
+              const nuevoRegistro = `${Math.floor(Math.random() * 10000)},${nombre},${telefono}, ${categoria}`;
               agregar('proveedores.txt', nuevoRegistro);
               break;
           case 3:
@@ -173,6 +175,7 @@ function gestionarProveedores(): void {
               const indexModificar = readlineSync.questionInt("Seleccione el índice a modificar: ");
               const nuevoNombre = readlineSync.question("Ingrese el nuevo nombre: ");
               const nuevoTelefono = readlineSync.question("Ingrese el nuevo teléfono: ");
+            
               const registroModificado = `${Math.floor(Math.random() * 10000)},${nuevoNombre},${nuevoTelefono}`;
               modificar('proveedores.txt', indexModificar, registroModificado);
               break;

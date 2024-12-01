@@ -2,3 +2,4 @@
 104, Veterinaria Coliandro, Av. Austral 2345
 4756,Tester add vete to CLI,Tester Direct
 9359,Tester add id vete,tester direct
+2396,Tester CLI add veterinary,Av. Siempre Vivas

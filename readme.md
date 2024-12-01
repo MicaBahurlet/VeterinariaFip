@@ -1,6 +1,6 @@
 <h1>Patitas System 🐾</h1>
 <h3>Trabajo Integrador FIP -Segundo cuatrimestre</h3>
-<p>Sistema de gestión para una red de veterinarias. En este sistema se podrán visualizar clientes, pacientes, proveedores e información de cada sucursal asociada a la red. <br> Además, en caso de requerirlo, se podrá visualizar los datos, modificarlos y eliminarlos.</p>
+<p>Sistema CLI de gestión para una red de veterinarias. En este sistema se podrán visualizar clientes, pacientes, proveedores e información de cada sucursal asociada a la red. <br> Además, en caso de requerirlo, se podrá visualizar los datos, modificarlos y eliminarlos.</p>
 
 ### Correr en consola
 
