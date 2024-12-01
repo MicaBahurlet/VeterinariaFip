@@ -4,3 +4,4 @@
 4153,Blacky,gato,23456
 8716,Sarita,Perro,3
 8917,Michin,exotica,4
+7294,Pacientito,exotica,34
