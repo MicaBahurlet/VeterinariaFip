@@ -1,7 +1,7 @@
 export class Proveedor {
   private id: number;
   private nombre: string;
-  private telefono: string;    //number?
+  private telefono: string;    
   private categoria: string;
 
   constructor(nombre: string, telefono: string, categoria: string) {
@@ -12,7 +12,7 @@ export class Proveedor {
     
   }
 
-  private generarId(): number {
+  private generarId(): number { //se podría usar una interfaz 
     return Math.floor(Math.random() * 10000);
   }
 }

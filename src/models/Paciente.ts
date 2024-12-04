@@ -11,7 +11,7 @@ export class Paciente {
     this.idDuenio = idDuenio;
   }
 
-  private validarEspecie(especie: string): string {                                          //if para validación. usar trim 
+  private validarEspecie(especie: string): string {                                          
     return especie.toLowerCase() === 'perro' || especie.toLowerCase() === 'gato' ? especie : 'exotica';
   }
 

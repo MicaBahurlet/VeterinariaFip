@@ -9,7 +9,7 @@ export class Veterinaria {
     this.direccion = direccion;
   }
 
-  private generarId(): number {
+  private generarId(): number { //se podría usar una interfaz 
     return Math.floor(Math.random() * 10000);
   }
 }

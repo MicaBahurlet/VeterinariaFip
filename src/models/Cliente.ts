@@ -1,7 +1,7 @@
 export class Cliente {
   private id: number;
   private nombre: string;
-  private telefono: string;                             //number?
+  private telefono: string;                             
   private vip: boolean;
   private visitas: number;
 
@@ -18,7 +18,7 @@ export class Cliente {
     this.vip = this.visitas >= 5; 
   }
 
-  private generarId(): number {                       //agregar validación para que no genere Id repetidos
+  private generarId(): number {                       //se podría usar una interfaz 
     return Math.floor(Math.random() * 10000);
   }
 }
