@@ -1,5 +1,6 @@
-2194,Tester Vete Name,Tester Direc
-104, Veterinaria Coliandro, Av. Austral 2345
+3410,fLESTER,HOLA 123
 4756,Tester add vete to CLI,Tester Direct
 9359,Tester add id vete,tester direct
 2396,Tester CLI add veterinary,Av. Siempre Vivas
+37,LaPata,La Pampa 2025
+611,mascotitas,laprida 1223

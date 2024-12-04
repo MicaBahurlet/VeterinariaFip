@@ -18,7 +18,7 @@ export class Cliente {
     this.vip = this.visitas >= 5; 
   }
 
-  private generarId(): number {                       //ver duplicado de código
+  private generarId(): number {                       //agregar validación para que no genere Id repetidos
     return Math.floor(Math.random() * 10000);
   }
 }
