@@ -1,17 +1,13 @@
-import * as fs from 'fs';
+//CRUD: CREATE, READ, UPDATE and DELETE
+import * as fs from 'fs'; //importamos módulo File System para la manipulación de los archivos .txt
 import * as path from 'path';
 
-//para listar
+//LISTAR
 export function listar(fileName: string): void {
     try {
-        //ruta relativa de la info 
-        const filePath = path.join(__dirname, `../src/data/${fileName}`);
-        //leer información del archivo
-        // console.log(`Leyendo archivo desde: ${filePath}`);  
-        const data = fs.readFileSync(filePath, 'utf-8');
-        //dividimos el archivo en lineas (split) y luego filtramos y eliminamos los espacios en blanco (filter)
-        // \n salto de línea 
-        const lines = data.split('\n').filter(line => line.trim() !== '');
+        const filePath = path.join(__dirname, `../src/data/${fileName}`); //ruta relativa de la info 
+        const data = fs.readFileSync(filePath, 'utf-8'); //leer información del archivo .txt
+        const lines = data.split('\n').filter(line => line.trim() !== '');  //dividimos el archivo en lineas (split) y luego filtramos y eliminamos los espacios en blanco (filter). "\n":salto de línea
         if (lines.length === 0) { //en caso de que no haya información
             console.log("No hay datos para mostrar.");
         } else {    //en caso de que haya información, recorre línea por línea y las va mostrando
@@ -25,7 +21,7 @@ export function listar(fileName: string): void {
     }
 }
 
-// agregar registro
+//AGREGAR
 export function agregar(fileName: string, nuevoRegistro: string): void {
     try {
         const filePath = path.join(__dirname, `../src/data/${fileName}`);
@@ -36,7 +32,7 @@ export function agregar(fileName: string, nuevoRegistro: string): void {
     }
 }
 
-//eliminar
+//ELIMINAR
 export function eliminar(fileName: string, index: number): void {
     try {
         const filePath = path.join(__dirname, `../src/data/${fileName}`);
@@ -46,9 +42,7 @@ export function eliminar(fileName: string, index: number): void {
             console.log("Índice inválido. Seleccione un numero de la pantalla");
             return;
         }
-        // "-1" porque los arrays arrancan desde la posición 0 y "1" por la cantidad de elementos que queremos borrar 
-        //splice(posición, cantidad);
-        lines.splice(index - 1, 1);
+        lines.splice(index - 1, 1); //splice(posición, cantidad)."-1" porque los arrays arrancan desde la posición 0 y "1" por la cantidad de elementos que queremos borrar 
         fs.writeFileSync(filePath, lines.join('\n') + '\n');
         console.log("Registro eliminado correctamente.");
     } catch (error) {
@@ -56,7 +50,7 @@ export function eliminar(fileName: string, index: number): void {
     }
 }
 
-//modificar
+//MODIFICAR
 export function modificar(fileName: string, index: number, nuevoRegistro: string): void {
     try {
         const filePath = path.join(__dirname, `../src/data/${fileName}`);

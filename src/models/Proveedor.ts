@@ -1,7 +1,7 @@
 export class Proveedor {
   private id: number;
   private nombre: string;
-  private telefono: string;    //ver
+  private telefono: string;    //number?
   private categoria: string;
 
   constructor(nombre: string, telefono: string, categoria: string) {

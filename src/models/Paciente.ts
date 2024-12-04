@@ -11,11 +11,11 @@ export class Paciente {
     this.idDuenio = idDuenio;
   }
 
-  private validarEspecie(especie: string): string {                                                           //if para validación. usar trim 
+  private validarEspecie(especie: string): string {                                          //if para validación. usar trim 
     return especie.toLowerCase() === 'perro' || especie.toLowerCase() === 'gato' ? especie : 'exotica';
   }
 
-  private generarId(): number {
+  private generarId(): number {       //se podría usar una interfaz 
     return Math.floor(Math.random() * 10000);
   }
 }
